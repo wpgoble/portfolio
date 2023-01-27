@@ -2,9 +2,13 @@ class Student:
     def __init__(self, name, grad_year):
         self.name = name
         self.graduation = grad_year
+        self.classes = list()
 
     def info(self):
         print(f"{self.name.capitalize()} graduates in {self.graduation}")
+
+    def addClass(self, course):
+        self.classes.append(course)
 
 
 def main():
