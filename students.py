@@ -18,7 +18,7 @@ class Student:
 
 def main():
     print("hello world")
-    first_year = Student("Bob", 2027)
+    first_year = Student("bob", 2027)
     first_year.info()
 
 
