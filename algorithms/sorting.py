@@ -3,6 +3,12 @@ __email__ = "will.goble@gmail.com"
 
 
 def quicksort(lst):
+    """
+    Quicksort is a divide-and-conquer algorithm that chooses a pivot element
+    from the array and partitions the other elements into two sub-arrays,
+    according to whether they are less than or greater than the pivot. The
+    sub-arrays are then sorted recursively.
+    """
     if len(lst) <= 1:
         return lst
 
