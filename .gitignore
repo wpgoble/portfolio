@@ -127,3 +127,21 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Temporary files
+*.swp
+*.swo
+*~
+
+# Editor files
+.vscode
+
+# Packages
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rarr
+*.tar
+*.zip
