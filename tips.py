@@ -85,3 +85,41 @@ plt.text(15, 35,
          size=7)
 plt.tight_layout()
 plt.show()
+
+fig, ax = plt.subplots()
+
+plt.scatter(
+        tips["total_bill"],
+        tips["tip"],
+        color="lightgray"
+)
+
+tips_h1 = tips.query("tip >= 8 | total_bill >= 40")
+plt.scatter(
+        tips_h1["total_bill"],
+        tips_h1["tip"],
+        color="Crimson",
+        s=25
+)
+
+plt.plot(
+        tips_h1["total_bill"],
+        tips_h1["tip"],
+        color="Crimson",
+        alpha=0.7,
+        ls="-."
+)
+
+plt.text(33, 9.75,
+         "These points are unusal",
+         color="Crimson", weight="bold")
+
+plt.text(7.5, 7.25,
+         "These points are the ordinary ones",
+         color="lightgray", weight="bold")
+
+plt.title("Storytelling with data")
+plt.xlabel("Total bill ($)")
+plt.ylabel("Tip ($)")
+plt.tight_layout()
+plt.show()
