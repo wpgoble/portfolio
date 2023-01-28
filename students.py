@@ -1,3 +1,8 @@
+__author__ = "William Goble"
+__email__ = "will.goble@gmail.com"
+__version__ = "0.1.0"
+
+
 class Student:
     def __init__(self, name, grad_year):
         self.name = name
